@@ -263,9 +263,9 @@ a:hover{
         width: 25%;
    }
 }
-.reserved{
+.organization{
+    color: #636363;
     text-align: center;
-    line-height: 2;
     -webkit-user-select: text;
    /* Safari */
     -moz-user-select: text;
@@ -276,29 +276,14 @@ a:hover{
    /* Standard */
 }
 @media (min-width:280px){
-    .reserved{
-        margin-top: 15%;
+    .organization{
+        margin-top: 5em;
+        margin-bottom: 5em;
         font-size: 14px;
    }
 }
 @media (min-width:375px){
-    .reserved{
-        margin-top: 10%;
+    .organization{
         font-size: 16px;
-   }
-}
-@media (min-width:425px){
-    .reserved{
-        font-size: 18px;
-   }
-}
-@media (min-width:768px){
-    .reserved{
-        margin-top: 5%;
-   }
-}
-@media (min-width:1440px){
-    .reserved{
-        margin-top: 2%;
    }
 }
