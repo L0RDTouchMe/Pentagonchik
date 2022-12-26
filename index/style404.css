@@ -11,7 +11,11 @@ html{
 a{
     color:inherit;
     text-decoration:none;
-    color: #32AFED;
+    color: #55c9ff;
+    transition: 0.3s;
+}
+a:hover{
+    color: #309bff;
 }
 .wrapper {
     opacity: 0;
