@@ -8,6 +8,16 @@ html{
     user-select: none;
    /* Standard */
 }
+br{
+    -webkit-user-select: none;
+   /* Safari */
+    -moz-user-select: none;
+   /* Firefox */
+    -ms-user-select: none;
+   /* IE10+/Edge */
+    user-select: none;
+   /* Standard */
+}
 .wrapper {
     opacity: 0;
 }
@@ -25,7 +35,7 @@ a:hover{
 }
 ::-webkit-scrollbar-thumb{
     border-radius: 20px;
-    background: #8b8b8b;
+    background: #BBBBBB;
 }
 .preload{
     display: block;
@@ -105,7 +115,7 @@ a:hover{
 }
 .block{
     width: 240px;
-    height: 336px;
+    height: 356px;
     padding: 10px;
     background-color: #f7f7f7;
     border-radius: 20px;
