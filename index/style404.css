@@ -85,26 +85,36 @@ a:hover{
     text-align: center;
 }
 .organization{
-    color: #636363;
-    text-align: center;
-    -webkit-user-select: text;
-   /* Safari */
-    -moz-user-select: text;
-   /* Firefox */
-    -ms-user-select: text;
-   /* IE10+/Edge */
-    user-select: text;
-   /* Standard */
+   color: #636363;
+   text-align: center;
+   -webkit-user-select: text;
+  /* Safari */
+   -moz-user-select: text;
+  /* Firefox */
+   -ms-user-select: text;
+  /* IE10+/Edge */
+   user-select: text;
+  /* Standard */
 }
 @media (min-width:280px){
-    .organization{
-        margin-top: 5em;
-        margin-bottom: 5em;
-        font-size: 14px;
-   }
+   .organization{
+       margin-top: 5em;
+       margin-bottom: 5em;
+       font-size: 12px;
+  }
 }
-@media (min-width:375px){
-    .organization{
-        font-size: 16px;
-   }
+@media (min-width:320px){
+   .organization{
+       font-size: 14px;
+  }
+}
+@media (min-width:768px){
+   .organization{
+       font-size: 16px;
+  }
+}
+@media (min-width:2560px){
+   .organization{
+       font-size: 22px;
+  }
 }
