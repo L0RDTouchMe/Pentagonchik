@@ -1,0 +1,235 @@
+/* Основа страницы */
+html{
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+   /* Safari */
+    -moz-user-select: none;
+   /* Firefox */
+    -ms-user-select: none;
+   /* IE10+/Edge */
+    user-select: none;
+   /* Standard */
+}
+body{
+    background: #FAFAFA;
+    overflow: overlay;
+    margin:0;
+}
+a{
+    color: #30DAFF;
+    text-decoration: none;
+    transition: 0.2s;
+}
+a:hover{
+    color: #162A4C;
+}
+br{
+    -webkit-user-select: none;
+   /* Safari */
+    -moz-user-select: none;
+   /* Firefox */
+    -ms-user-select: none;
+   /* IE10+/Edge */
+    user-select: none;
+   /* Standard */
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #CECECE;
+}
+/* Стартовый логотип (загрузка) */
+.preload{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.7s ease-in-out;
+    z-index: 999;
+    pointer-events: none;
+}
+.preload.invisible{
+    top: -100%;
+    opacity: 0;
+}
+.pre_logo{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.logo{
+    text-align: center;
+    margin-top: 2em;
+}
+.logotype{
+    width: 250px;
+    pointer-events: none;
+}
+.about{
+    font-size: 28px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: 20em;
+    -webkit-user-select: text;
+    /* Safari */
+     -moz-user-select: text;
+    /* Firefox */
+     -ms-user-select: text;
+    /* IE10+/Edge */
+     user-select: text;
+    /* Standard */
+}
+@media (min-width:280px){
+    .about{
+        font-size: 1.5em;
+        width: 100%;
+   }
+}
+@media (min-width:768px){
+    .about{
+        width: 20em;
+   }
+}
+/* Команда */
+.block_team{
+    text-align: center;
+    margin-top: 5em;
+}
+.people_block{
+    background-color: #FFFFFF;
+    width: 14%;
+    border-radius: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 15px #0000001a;
+    display: inline-block;
+    transition: 0.2s;
+    margin: 0.5em;
+}
+@media (min-width:280px){
+    .people_block{
+        display: block;
+        width: 15em;
+        margin: 0em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+   }
+}
+@media (min-width:320px){
+    .people_block{
+        width: 16.5em;
+   }
+}
+@media (min-width:425px){
+    .people_block{
+        display: inline-block;
+        margin: 0.5em;
+        margin-top: 2em;
+   }
+}
+@media (min-width:768px){
+    .people_block{
+        padding: 0.5em;
+        margin-top: 2em;
+   }
+}
+.people_block:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 15px #00000042;
+}
+.photo{
+    text-align: center;
+}
+.photo_settings{
+    width: 9em;
+    border-radius: 100em;
+    text-align: center;
+    margin-top: 1em;
+}
+.name{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 1em;
+    -webkit-user-select: text;
+    /* Safari */
+     -moz-user-select: text;
+    /* Firefox */
+     -ms-user-select: text;
+    /* IE10+/Edge */
+     user-select: text;
+    /* Standard */
+}
+.qualification{
+    text-align: center;
+    font-size: 18px;
+    color: #AEAEAE;
+    margin-top: 1em;
+    -webkit-user-select: text;
+    /* Safari */
+     -moz-user-select: text;
+    /* Firefox */
+     -ms-user-select: text;
+    /* IE10+/Edge */
+     user-select: text;
+    /* Standard */
+}
+.link{
+    text-align: center;
+    font-size: 18px;
+    padding: 1em;
+    transition: 1s;
+    -webkit-user-select: text;
+    /* Safari */
+     -moz-user-select: text;
+    /* Firefox */
+     -ms-user-select: text;
+    /* IE10+/Edge */
+     user-select: text;
+    /* Standard */
+}
+/* БЛОК - Данные организации */
+footer{
+    color: #777777;
+    text-align: center;
+    -webkit-user-select: text;
+   /* Safari */
+    -moz-user-select: text;
+   /* Firefox */
+    -ms-user-select: text;
+   /* IE10+/Edge */
+    user-select: text;
+   /* Standard */
+}
+@media (min-width:280px){
+    footer{
+        margin-top: 5em;
+        margin-bottom: 5em;
+        font-size: 12px;
+   }
+}
+@media (min-width:320px){
+    footer{
+        font-size: 14px;
+   }
+}
+@media (min-width:425px){
+    footer{
+        font-size: 16px;
+   }
+}
+@media (min-width:2560px){
+    footer{
+        font-size: 18px;
+   }
+}
