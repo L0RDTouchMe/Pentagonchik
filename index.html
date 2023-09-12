@@ -3,8 +3,8 @@
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Pentagonchik</title>
-      <link rel="stylesheet" href="index/style.css">
+      <title>ITШники</title>
+      <link rel="stylesheet" href="src/styles/style.css">
       <link rel="apple-touch-icon" href="icons/apple-icon(192x192).png"/>
       <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png"/>
       <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png"/>
@@ -29,100 +29,66 @@
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
    </head>
-   <body style="font-family: Roboto-Regular">
+   <body style="font-family: OpenSans-Regular">
+      <style>
+         @font-face {
+         font-family: OpenSans-Regular;
+         src: url(src/fonts/OpenSans-Regular.ttf);
+         }
+      </style>
+      <!-- Стартовый логотип -->
       <div class="preload">
          <img src="icons/logo-512x512.png" class="pre_logo" width="300" />
       </div>
-      <script src="index/script.js"></script>
-      <style>
-         @font-face {
-         font-family: Roboto-Regular;
-         src: url(index/files/Roboto-Regular.ttf);
-         }
-      </style>
       <div class="wrapper">
       <div class="logo">
-         <img src="index/files/Logo.png" class="logotype" />
+         <img src="icons/Logotype_naming.png" class="logotype" />
       </div>
-      <div class="about">Лучшие хакеры мира, из дикого Омска.<br/>Это они захватили домен "pentagonchik.ru"</div>
-      <div class="block_people">
-         <!-- Eugene Viktorov -->
-         <div class="block">
-            <div class="photo_profile">
-               <img src="index/files/avatars/Photo-Profile-Eugene.png" class="photo" />
-            </div>
-            <div class="name_profile">Евгений Викторов</div>
-            <div class="about_profile">Web-Дизайнер</div>
-            <div class="link">
-               <a href="https://eugeneviktorov.github.io">Персональный сайт</a>
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
+      <div class="about">Мы самая молодая и сплочённая команда в Омске.<br>Стремимся изменить мир к лучшему!</div>
+      <!-- Команда -->
+      <div class="block_team">
+         <!-- Евгений Викторов -->
+         <div class="people_block">
+            <div class="photo"><img src="src/components/avatars/Photo-Profile-Eugene.png" class="photo_settings"></div>
+            <div class="name">Евгений<br>Викторов</div>
+            <div class="qualification">Frontend-разработчик</div>
+            <div class="link"><a href="https://viktorovvv.ru">Персональный сайт</a></div>
          </div>
-         <!-- Ilya Smakovsky -->
-         <div class="block">
-            <div class="photo_profile">
-               <img src="index/files/avatars/Photo-Profile-Ilya.png" class="photo" />
-            </div>
-            <div class="name_profile">Илья Смаковский</div>
-            <div class="about_profile">Fullstack-разработчик</div>
-            <div class="link">
-               <a href="https://websmail.github.io/smail/">Персональный сайт</a>
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
+         <!-- Илья Смаковский -->
+         <div class="people_block">
+            <div class="photo"><img src="src/components/avatars/Photo-Profile-Ilya.png" class="photo_settings"></div>
+            <div class="name">Илья<br>Смаковский</div>
+            <div class="qualification">Fullstack-разработчик</div>
+            <div class="link"><a href="https://websmail.github.io/smail">Персональный сайт</a></div>
          </div>
-         <!-- Alexsandr Sariev -->
-         <div class="block">
-            <div class="photo_profile">
-               <img src="index/files/avatars/Photo-Profile-Alexsander.png" class="photo" />
-            </div>
-            <div class="name_profile">Александр Сариев</div>
-            <div class="about_profile">Fullstack-разработчик</div>
-            <div class="link">
-               <a href="https://github.com/L0RDTouchMe">GitHub</a>
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
+         <!-- Александр Сариев -->
+         <div class="people_block">
+            <div class="photo"><img src="src/components/avatars/Photo-Profile-Alexsander.png" class="photo_settings"></div>
+            <div class="name">Александр<br>Сариев</div>
+            <div class="qualification">Fullstack-разработчик</div>
+            <div class="link"><a href="https://github.com/L0RDTouchMe">GitHub</a></div>
          </div>
-         <!-- Danila Kosenchuk -->
-         <div class="block">
-            <div class="photo_profile">
-               <img src="index/files/avatars/Photo-Profile-Dania.png" class="photo" />
-            </div>
-            <div class="name_profile">Данила Косенчук</div>
-            <div class="about_profile">Frontend-разработчик</div>
-            <div class="link">
-               <a href="https://github.com/Dakostal">GitHub</a>
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
+         <!-- Данила Косенчук -->
+         <div class="people_block">
+            <div class="photo"><img src="src/components/avatars/Photo-Profile-Dania.png" class="photo_settings"></div>
+            <div class="name">Данила<br>Косенчук</div>
+            <div class="qualification">Frontend-разработчик</div>
+            <div class="link"><a href="https://github.com/Dakostal">GitHub</a></div>
          </div>
-         <!-- Kirill Grachev -->
-         <div class="block">
-            <div class="photo_profile">
-               <img src="index/files/avatars/Photo-Profile-Kirill.png" class="photo" />
-            </div>
-            <div class="name_profile">Кирилл<br>Грачёв</div>
-            <div class="about_profile">Frontend-разработчик</div>
-            <div class="link">
-               <a href="https://github.com/kipyusha">GitHub</a>
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
-         </div>
-         <div class="organization"> 
-            © Pentagonchik.ru<br>
-            Все права защищены<br>
-            2022 - 2023<br><br>
-            <a href="documents/terms-of-use.txt">Пользовательское соглашение</a><br><br>
-            Дизайнер - Евгений Викторов
+         <!-- Кирилл Грачёв -->
+         <div class="people_block">
+            <div class="photo"><img src="src/components/avatars/Photo-Profile-Kirill.png" class="photo_settings"></div>
+            <div class="name">Кирилл<br>Грачёв</div>
+            <div class="qualification">Fullstack-разработчик</div>
+            <div class="link"><a href="https://github.com/kipyusha">GitHub</a></div>
          </div>
       </div>
+      <!-- Данные организации -->
+      <footer>
+         © pentagonchik.ru<br>
+         Все права защищены<br>
+         2022 - 2023<br><br>
+      </footer>
+      <script src="src/styles/script.js"></script>
    </body>
 </html>

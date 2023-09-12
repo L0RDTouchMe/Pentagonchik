@@ -1,0 +1,214 @@
+/* Основа страницы */
+html{
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+   /* Safari */
+    -moz-user-select: none;
+   /* Firefox */
+    -ms-user-select: none;
+   /* IE10+/Edge */
+    user-select: none;
+   /* Standard */
+}
+body{
+    background: #FAFAFA;
+    overflow: overlay;
+    margin:0;
+}
+a{
+    color: #30DAFF;
+    text-decoration: none;
+    transition: 0.2s;
+}
+a:hover{
+    color: #25587C;
+}
+br{
+    -webkit-user-select: none;
+   /* Safari */
+    -moz-user-select: none;
+   /* Firefox */
+    -ms-user-select: none;
+   /* IE10+/Edge */
+    user-select: none;
+   /* Standard */
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #CECECE;
+}
+/* Стартовый логотип (загрузка) */
+.wrapper {
+    opacity: 0;
+}
+.preload{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.7s ease-in-out;
+    z-index: 999;
+    pointer-events: none;
+}
+.preload.invisible{
+    top: -100%;
+    opacity: 0;
+}
+.pre_logo{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+/* Главный текст */
+.page_not_found{
+    text-align: center;
+    font-size: 48px;
+    margin-top: 0.5em;
+    color: #162A4C;
+}
+@media (min-width:280px){
+    .page_not_found{
+        font-size: 28px;
+   }
+}
+@media (min-width:375px){
+    .page_not_found{
+        font-size: 38px;
+   }
+}
+@media (min-width:768px){
+    .page_not_found{
+        font-size: 48px;
+   }
+}
+@media (min-width:2560px){
+    .page_not_found{
+        font-size: 68px;
+   }
+}
+.error_number{
+    text-align: center;
+    font-size: 108px;
+    color: #CECECE;
+    font-weight: 900;
+}
+@media (min-width:2560px){
+    .error_number{
+        font-size: 152px;
+   }
+}
+.photo{
+    text-align: center;
+    pointer-events: none;
+}
+.photo_settings{
+    width: 500px;
+}
+@media (min-width:280px){
+    .photo_settings{
+        width: 250px;
+   }
+}
+@media (min-width:375px){
+    .photo_settings{
+        width: 350px;
+   }
+}
+@media (min-width:425px){
+    .photo_settings{
+        width: 400px;
+   }
+}
+@media (min-width:768px){
+    .photo_settings{
+        width: 500px;
+   }
+}
+@media (min-width:2560px){
+    .photo_settings{
+        width: 700px;
+   }
+}
+.button_position{
+    text-align: center;
+}
+.button_link{
+    margin-top: 2em;
+    display: inline-block;
+}
+.button_text{
+    background-color: #30DAFF;
+    color: #fff;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+@media (min-width:280px){
+    .button_text{
+        padding: 0.5em 2em 0.5em 2em;
+        font-size: 20px;
+   }
+}
+@media (min-width:320px){
+    .button_text{
+        padding: 0.8em 3em 0.8em 3em;
+        font-size: 20px;
+   }
+}
+@media (min-width:425px){
+    .button_text{
+        padding: 1em 3em 1em 3em;
+        font-size: 22px;
+   }
+}
+@media (min-width:2560px){
+    .button_text{
+        font-size: 28px;
+   }
+}
+.button_text:hover{
+    background-color: #162A4C;
+}
+/* БЛОК - Данные организации */
+footer{
+    color: #777777;
+    text-align: center;
+    -webkit-user-select: text;
+   /* Safari */
+    -moz-user-select: text;
+   /* Firefox */
+    -ms-user-select: text;
+   /* IE10+/Edge */
+    user-select: text;
+   /* Standard */
+}
+@media (min-width:280px){
+    footer{
+        margin-top: 5em;
+        margin-bottom: 5em;
+        font-size: 12px;
+   }
+}
+@media (min-width:320px){
+    footer{
+        font-size: 14px;
+   }
+}
+@media (min-width:425px){
+    footer{
+        font-size: 16px;
+   }
+}
+@media (min-width:2560px){
+    footer{
+        font-size: 18px;
+   }
+}

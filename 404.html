@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>404</title>
-      <link rel="stylesheet" href="index/style404.css">
+      <link rel="stylesheet" href="src/styles/style_error.css">
       <link rel="apple-touch-icon" href="icons/apple-icon(192x192).png"/>
       <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png"/>
       <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png"/>
@@ -29,38 +29,33 @@
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
    </head>
-   <body style="font-family: Roboto-Regular">
+   <body style="font-family: OpenSans-Regular">
       <style>
          @font-face {
-         font-family: Roboto-Regular;
-         src: url(index/files/Roboto-Regular.ttf)}
+         font-family: OpenSans-Regular;
+         src: url(src/fonts/OpenSans-Regular.ttf);
+         }
       </style>
       <div class="preload">
-         <img src="icons/logo-512x512.png" class="pre_logo" width="300" />
+         <img src="icons/logo-512x512.png" class="pre_logo" width="300"/>
       </div>
-      <div class="wrapper">
-      <div class="logo">
-         <img src="index/files/Logo.png" class="logotype" />
-      </div>
-      <div class="text">
-         <p>404 ERROR</p>
-      </div>
-      <div class="about">
-         <p>Страница не найдена</p>
-      </div>
-      <div class="link">
+      <div class="wrapper"></div>
+      <div class="page_not_found">Страница<br>не найдена</div>
+      <div class="error_number">404</div>
+      <div class="photo"><img src="icons/Logotype_naming.png" class="photo_settings"/></div>
+      <div class="button_position">
          <a href="https://pentagonchik.ru">
-            <p>На главную страницу
-         </a>
-         </p>
+            <div class="button_link">
+               <div class="button_text">На главную</div>
+            </div>
       </div>
-      <div class="organization"> 
-         © Pentagonchik.ru<br>
+      </a>
+      <!-- Данные организации -->
+      <footer>
+         © pentagonchik.ru<br>
          Все права защищены<br>
          2022 - 2023<br><br>
-         <a href="documents/terms-of-use.txt">Пользовательское соглашение</a><br><br>
-         Дизайнер - Евгений Викторов
-      </div>
-      <script src="index/script.js"></script>
+      </footer>
+      <script src="src/styles/script.js"></script>
    </body>
 </html>
